@@ -1,0 +1,17 @@
+{
+    "name": "depa/shopingo-activerecord",
+    "description": "...",
+    "type": "library",
+    "require": {
+        "depa/depa-activerecord": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shopingo\\ActiveRecord\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    }
+}
