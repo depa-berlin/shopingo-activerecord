@@ -1,7 +1,6 @@
 <?php
 namespace Shopingo\ActiveRecord;
 
-use Library\Model\AbstractService;
 
 class ArticleDetailService extends AbstractService
 {

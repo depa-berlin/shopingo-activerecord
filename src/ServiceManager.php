@@ -66,10 +66,8 @@ class ServiceManager
         return ArticleVariantDetailService::getInstance($this->dbAdapter);
 
     }
-
-    public function getQueueService(){
-
-        return \ShopProductUpdate\Model\ImportData\Service::getInstance($this->dbAdapter);
-
+    public function getArticleByVariant(VariantModel $variant){
+        return $this->getArticleService()->get(['article_id' => $variant->article_id]);
     }
+
 }
