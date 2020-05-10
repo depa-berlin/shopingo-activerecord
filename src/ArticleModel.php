@@ -1,7 +1,7 @@
 <?php
 namespace Shopingo\ActiveRecord;
 
-use Depa\Core\DataModel\ActiveRecord\ActiveRecord;
+use Depa\ActiveRecord\ActiveRecord;
 
 /**
  *

@@ -66,6 +66,13 @@ class ServiceManager
         return ArticleVariantDetailService::getInstance($this->dbAdapter);
 
     }
+
+    /**
+     * Liefert anhand eines Varianten-Objektes das dazugehörige Artikel-Objekt zurück
+     *
+     * @param VariantModel $variant
+     * @return ArticleModel
+     */
     public function getArticleByVariant(VariantModel $variant){
         return $this->getArticleService()->get(['article_id' => $variant->article_id]);
     }
