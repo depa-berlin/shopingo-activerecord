@@ -206,6 +206,25 @@ class ArticleModel extends ActiveRecord
     }
 
     /**
+     * Liefert eine konkrete Variante anhand der Artikelnummer
+     *
+     * @param $articlenumber
+     * @return VariantModel|null
+     * @throws \Exception
+     */
+    public function findVariantByArticlenumber($articlenumber)
+    {
+        foreach ($this->getAllVariants() as $variantModel){
+            /* @var VariantModel $variantModel*/
+            if($variantModel->articlenumber == $articlenumber)
+            {
+                return $variantModel;
+            }
+        }
+        return null;
+    }
+
+    /**
      * Wenn Varianten existieren dann true, wenn keine existieren, dann false
      *
      * @return bool
