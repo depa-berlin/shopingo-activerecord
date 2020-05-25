@@ -63,7 +63,7 @@ class VariantModel extends ActiveRecord
     {
         if(is_null($this->priceCount)){
             $priceService = ServiceManager::getInstance()->getArticleVariantPriceService();
-            $this->priceArray = $priceService->getAll(['article_id' => $this->article_id], 'quantity ASC');
+            $this->priceArray = $priceService->getAll(['articlevariant_id' => $this->articlevariant_id], 'quantity ASC');
             $this->priceCount = count($this->priceArray);
         }
         return $this->priceArray;
