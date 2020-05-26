@@ -44,4 +44,9 @@ class ArticleVariantPriceModel extends ActiveRecord
         ],
     ];
 
+    public function getPrice()
+    {
+        return floatval($this->price);
+    }
+
 }

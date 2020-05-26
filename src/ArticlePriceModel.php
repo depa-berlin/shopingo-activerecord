@@ -43,4 +43,9 @@ class ArticlePriceModel extends ActiveRecord
             'type' => 'required'
         ]
     ];
+
+    public function getPrice()
+    {
+        return floatval($this->price);
+    }
 }
