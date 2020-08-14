@@ -29,8 +29,9 @@ class ArticleModel extends ActiveRecord
         'shippingcostsvalue',
         'stocknumber',
         'giftpaper',
-        'status1',
+        'status1', //Sprechstundenbedarf 1/0
         'status2',
+        'text1', //Pharmazentralnummer
         'baseprice_id',
         'baseprice_quantity',
         'articlevarianttype_id',

@@ -22,7 +22,9 @@ class VariantModel extends ActiveRecord
         'sort',
         'status',
         'special',
-        'articlenumber'
+        'articlenumber',
+        'status1', //Sprechstundenbedarf 1/0
+        'text1' //Pharmazentralnummer
     ];
 
     public $rules = [
