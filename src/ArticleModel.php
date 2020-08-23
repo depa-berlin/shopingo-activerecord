@@ -303,4 +303,13 @@ class ArticleModel extends ActiveRecord
         return $this->properties['noprice_status'];
     }
 
+    public function setSprechstundenbedarfStatus($status)
+    {
+        $this->status1 = $status;
+    }
+    public function getSprechstundenbedarfStatus()
+    {
+        return $this->status1;
+    }
+
 }

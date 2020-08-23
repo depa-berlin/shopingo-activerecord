@@ -113,5 +113,14 @@ class VariantModel extends ActiveRecord
         $this->details = $detailService->getAll(['articlevariant_id' => $this->articlevariant_id]);
         return $this->details;
     }
+
+    public function setSprechstundenbedarfStatus($status)
+    {
+        $this->status1 = $status;
+    }
+    public function getSprechstundenbedarfStatus()
+    {
+        return $this->status1;
+    }
 }
 
