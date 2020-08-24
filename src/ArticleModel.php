@@ -312,4 +312,12 @@ class ArticleModel extends ActiveRecord
         return $this->status1;
     }
 
+    public function setPznr($value)
+    {
+        $this->text1 = $value;
+    }
+    public function getPznr()
+    {
+        return $this->text1;
+    }
 }
