@@ -24,7 +24,7 @@ class VariantModel extends ActiveRecord
         'special',
         'articlenumber',
         'status1', //Sprechstundenbedarf 1/0
-        'text1' //Pharmazentralnummer
+        'infotext1' //Pharmazentralnummer
     ];
 
     public $rules = [
@@ -125,7 +125,7 @@ class VariantModel extends ActiveRecord
 
     public function setPznr($value)
     {
-        $this->text1 = $value;
+        $this->infotext1 = $value;
     }
     public function getPznr()
     {

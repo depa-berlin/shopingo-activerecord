@@ -31,7 +31,7 @@ class ArticleModel extends ActiveRecord
         'giftpaper',
         'status1', //Sprechstundenbedarf 1/0
         'status2',
-        'text1', //Pharmazentralnummer
+        'infotext1', //Pharmazentralnummer
         'baseprice_id',
         'baseprice_quantity',
         'articlevarianttype_id',
@@ -314,7 +314,7 @@ class ArticleModel extends ActiveRecord
 
     public function setPznr($value)
     {
-        $this->text1 = $value;
+        $this->infotext1 = $value;
     }
     public function getPznr()
     {
