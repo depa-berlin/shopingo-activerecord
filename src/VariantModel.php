@@ -129,7 +129,7 @@ class VariantModel extends ActiveRecord
     }
     public function getPznr()
     {
-        return $this->text1;
+        return $this->infotext1;
     }
 }
 
